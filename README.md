@@ -151,3 +151,6 @@ column additions by which abacus complement they need — but:
   should I flash next" into independent, individually-testable pieces,
 - feeds pattern weakness directly into number *generation*, rather than
   the original code's fixed pre-authored item lists.
+
+## NOTE
+this code is made with help of claude ai ... THANKS
