@@ -134,20 +134,3 @@ knocked off on a miss). For the digit-level layer: `digit_mastery_up` /
 falls on a miss) and `digit_boost` (the max extra multiplier a fully-weak
 digit can add to a fact's weight — 0 disables digit-level biasing
 entirely).
-
-## What changed vs. the original scripts
-
-The two original snippets (`sr`/spaced-repetition-over-text-files, and
-`Saf`/`processor`/pattern-monitoring) had a few rough edges called out in
-their own comments (`maxn`'s "original body was broken", `nm`'s "adjust
-if wrong"). Rather than preserve those literally, this rewrite keeps the
-same *ideas* — exponential-interval spaced repetition, and classifying
-column additions by which abacus complement they need — but:
-- stores state as JSON instead of `eval()`-ing a text file (eval on
-  arbitrary file content is a code-execution risk, and brittle besides),
-- classifies patterns using the actual soroban complement algorithm
-  (based on spare bead capacity) instead of a before/after digit diff,
-- separates "what pattern is this" / "is this fact due" / "what number
-  should I flash next" into independent, individually-testable pieces,
-- feeds pattern weakness directly into number *generation*, rather than
-  the original code's fixed pre-authored item lists.
