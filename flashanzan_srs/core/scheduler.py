@@ -121,7 +121,7 @@ class PositionState:
 @dataclass
 class SchedulerConfig:
     base_interval_seconds: float = 60.0   # smallest possible gap between reviews
-    growth: float = 2.0                   # interval multiplier per successful rep
+    growth: float = 1.61803               # interval multiplier per successful rep
     max_rep_cap: int = 15                 # reps beyond this stop growing the interval
     wrong_answer_penalty: int = 2         # reps subtracted on a wrong answer
     new_item_batch: int = 5               # how many new facts to introduce per "catch up" pass
