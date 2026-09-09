@@ -153,4 +153,4 @@ column additions by which abacus complement they need — but:
   the original code's fixed pre-authored item lists.
 
 ## NOTE
-this code is made with help of claude ai ... THANKS
+this code is made with help of claude ai ... every one is welcome to make improvment for the code and use the same idea . Thanks 
